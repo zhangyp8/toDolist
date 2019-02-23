@@ -39,8 +39,13 @@ code {
   font-size:20px;
 }
 .listItem input{
-  line-height: 35px;
-  border-radius:15px;
+  background-color:#4CAF50;
+  border: none;
+  padding: 2px 2px;
+  display: inline-block;
+  margin: 2px 1px;
+  cursor: pointer;
+  border-radius:2px;
 }
 .todoItem{
   color: #000000;
@@ -50,7 +55,7 @@ code {
   color: gray;
 }
 .delItem{
-    background-color:#f44336; /* Green */
+    background-color:#f44336;
     border: none;
     color: white;
     padding: 3px 8px;
