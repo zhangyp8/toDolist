@@ -40,6 +40,14 @@ class ToDoList extends Component{
         });
         //console.log(this.state.list);
     }
+    // 删除事项
+    handleDelete=(key)=>{
+        let listTemp = this.state.list;
+        listTemp.splice(key,1);
+        this.setState({
+            list:listTemp
+        });
+    }
     render(){
         return(
             <div>
@@ -54,7 +62,7 @@ class ToDoList extends Component{
                                     return(
                                         <li key = {key} className = "todoItem">
                                             <input type="checkbox" checked = {value.checked} onChange={this.handleChange.bind(this,key)}/>
-                                            {value.title}
+                                            {value.title}&nbsp;<button className = "delItem" onClick = {this.handleDelete.bind(this,key)}>删除</button>
                                         </li>
                                     )
                                 }

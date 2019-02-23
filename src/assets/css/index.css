@@ -49,3 +49,16 @@ code {
 .doneItem{
   color: gray;
 }
+.delItem{
+    background-color:#f44336; /* Green */
+    border: none;
+    color: white;
+    padding: 3px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius:5px;
+}
